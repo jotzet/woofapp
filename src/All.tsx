@@ -4,7 +4,7 @@ import RedirectButton from "./static/RedirectButton";
 
 function All() {
   //zczytywanie danych z API
-  const [dogs, setDogs] = useState([]);
+  const [dogs, setDogs] = useState<string[]>([]);
   useEffect(() => {
     fetch("https://dog.ceo/api/breeds/list/all")
       .then((response) => response.json())

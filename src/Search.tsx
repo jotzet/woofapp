@@ -10,8 +10,7 @@ function Search() {
   const queryParams = new URLSearchParams(location.search);
   const query = queryParams.get("query") || "";
   const [searchTerm, setSearchTerm] = useState(query);
-  const [searchResult, setSearchResult] = useState([]);
-  // const [searched, setSearched] = useState(false);
+  const [searchResult, setSearchResult] = useState<string[]>([]);
 
   //Zczytywanie danych z API
   const handleSearch = () => {
