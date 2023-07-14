@@ -24,7 +24,7 @@ function All() {
   return (
     <div>
       <Woof />
-      <h1 className="title">Dog breeds</h1>
+      <h1 className="title">Scroll down to display all the dog breeds!</h1>
       <div className="dog-list">
         {dogs.map((breed) => (
           <div key={breed}>
